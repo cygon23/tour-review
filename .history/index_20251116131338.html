@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leave a Review</title>
+    <link rel="icon" href="logo/fav/favicon.ico" type="image/png" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet" />
+
+    <!-- Disable right-click -->
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+    </script>
+
+    <!-- ⭐ GTranslate Widget (IMPORTANT) -->
+    <script>
+      (function () {
+        var gtranslate = document.createElement("script");
+        gtranslate.src =
+          "https://cdn.gtranslate.net/widgets/latest/classic.js";
+        gtranslate.defer = true;
+        document.head.appendChild(gtranslate);
+      })();
+    </script>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #fbf3e4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .review-box {
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 500px;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      /* ⭐ GTranslate styling – align top-right inside the card */
+      .gtranslate_wrapper {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+
+      .review-box img.logo {
+        max-width: 120px;
+        margin-bottom: 15px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .review-box h2 {
+        color: #7c302d;
+        margin-bottom: 15px;
+        font-size: 24px;
+      }
+
+      .message-box {
+        background-color: #f8d8bb;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        color: #7c302d;
+        font-size: 15px;
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        animation: bounce 1.5s ease;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 14px;
+        margin: 12px 0;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      .btn i {
+        font-size: 18px;
+      }
+
+      .trip-btn,
+      .safari-btn {
+        background-color: #71553e;
+        color: #fff;
+      }
+
+      .trip-btn:hover,
+      .safari-btn:hover {
+        background-color: #d2b196;
+        transform: translateY(-3px);
+      }
+
+      a.review-link {
+        text-decoration: none;
+        display: block;
+        position: relative;
+      }
+
+      .platform-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 2px solid #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-with-logo {
+        padding-left: 60px;
+        position: relative;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        20% {
+          transform: translateY(-12px);
+        }
+        40% {
+          transform: translateY(6px);
+        }
+        60% {
+          transform: translateY(-6px);
+        }
+        80% {
+          transform: translateY(4px);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .review-box {
+          margin: 20px;
+          padding: 30px 20px;
+        }
+        .message-box {
+          font-size: 14px;
+        }
+        .platform-logo {
+          width: 30px;
+          height: 30px;
+        }
+        .btn-with-logo {
+          padding-left: 50px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="review-box">
+
+      <!-- ⭐ Language Switcher (GTranslate) -->
+      <div class="gtranslate_wrapper"></div>
+
+      <img src="logo/logo.png" alt="Logo" class="logo" />
+
+      <h2>We'd love your feedback!</h2>
+
+      <div class="message-box">
+        <strong>Please</strong> Kindly Share Your Review – Your Support Means a
+        Lot!<br /><br />
+        <strong>Dear Friends & Travelers</strong>,<br /><br />
+        I'm thrilled to announce that I've officially started my own safari
+        company. If you've journeyed with me or experienced any of my services,
+        I'd be incredibly grateful if you could take a moment to leave a review
+        on one of the platforms below.<br /><br />
+        Your words not only encourage me, but also help build trust with future
+        guests.<br /><br />
+        If you've already shared your thoughts, thank you so much—and apologies
+        for the repeat request.<br /><br />
+        🌍 Once done, feel free to continue exploring our adventures on
+        <strong>https://liontracksafari.com</strong> website!
+      </div>
+
+      <!-- SafariBookings -->
+      <a
+        href="https://www.safaribookings.com/review/p7402"
+        target="_blank"
+        class="review-link">
+        <button class="btn safari-btn btn-with-logo">
+          <img src="logo/safaribooking.png" alt="SafariBookings" class="platform-logo" />
+          Review on SafariBookings 
+        </button>
+      </a>
+
+      <!-- SafariGo -->
+      <a
+        href="https://www.safarigo.com/operator/lion-track-safari-1026"
+        target="_blank"
+        class="review-link">
+        <button class="btn safari-btn btn-with-logo">
+          <img src="logo/safarigo.png" alt="SafariGo" class="platform-logo" />
+          Review on Safari Go 
+        </button>
+      </a>
+
+      <!-- TripAdvisor -->
+      <a
+        href="https://www.tripadvisor.com/ClientLink?value=R1FkXy9Vc2VyUmV2aWV3RWRpdC1nMjk3OTEzLWQyNDk3NzQ3MC1MaW9uX1RyYWNrX1NhZmFyaS1BcnVzaGFfQXJ1c2hhX1JlZ2lvbi5odG1sX0w2Ng%3D%3D"
+        target="_blank"
+        class="review-link">
+        <button class="btn trip-btn btn-with-logo">
+          <img src="logo/triple0adviser.png" alt="TripAdvisor" class="platform-logo" />
+          Review on TripAdvisor 
+        </button>
+      </a>
+
+      <!-- Google -->
+      <a href="https://share.google/iWO6FdSDFkVqvs3NI" target="_blank" class="review-link">
+        <button class="btn trip-btn btn-with-logo">
+          <img src="logo/google.png" alt="Google" class="platform-logo" />
+          <i class="fab fa-google"></i> Review on Google
+        </button>
+      </a>
+    </div>
+  </body>
+</html>
