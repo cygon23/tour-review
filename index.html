@@ -110,7 +110,7 @@
       margin: 0;
       padding: 24px 16px;
       font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(145deg, #fbf3e4 0%, #f5e8d0 50%, #ede0c8 100%);
+      background: #FFFFFF;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -147,7 +147,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, #7c302d, #c0672c, #d2993a);
+      background: linear-gradient(90deg, #1C0F06, #E87722, #F0820A);
       border-radius: 24px 24px 0 0;
     }
 
@@ -162,7 +162,7 @@
     /* ─── Heading ────────────────────────────────────────── */
     .review-box h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      color: #7c302d;
+      color: #2B1A0E;
       margin: 0 0 6px;
       font-size: 26px;
       font-weight: 700;
@@ -171,7 +171,7 @@
 
     .subtitle {
       font-size: 13px;
-      color: #a07050;
+      color: #C45F10;
       margin: 0 0 22px;
       font-weight: 500;
       letter-spacing: 0.3px;
@@ -180,12 +180,12 @@
 
     /* ─── Message Box ────────────────────────────────────── */
     .message-box {
-      background-color: #f8d8bb;
+      background-color: #fdf0e6;
       padding: 20px 22px 18px;
       border-radius: 16px;
-      border: 1px solid rgba(124, 48, 45, 0.1);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-      color: #7c302d;
+      border: 1px solid rgba(43, 26, 14, 0.12);
+      box-shadow: 0 4px 14px rgba(28, 15, 6, 0.06);
+      color: #2B1A0E;
       font-size: 14.5px;
       text-align: left;
       margin-bottom: 22px;
@@ -212,7 +212,7 @@
       left: 0;
       right: 0;
       height: 50px;
-      background: linear-gradient(to bottom, transparent, #f8d8bb);
+      background: linear-gradient(to bottom, transparent, #fdf0e6);
       pointer-events: none;
       transition: opacity 0.3s;
     }
@@ -229,8 +229,8 @@
       gap: 6px;
       margin-top: 10px;
       background: none;
-      border: 1.5px solid #7c302d;
-      color: #7c302d;
+      border: 1.5px solid #2B1A0E;
+      color: #2B1A0E;
       font-size: 13px;
       font-weight: 600;
       font-family: inherit;
@@ -242,7 +242,7 @@
     }
 
     .read-more-btn:hover {
-      background: #7c302d;
+      background: #E87722;
       color: #fff;
       transform: translateY(-1px);
     }
@@ -278,15 +278,15 @@
 
     .trip-btn,
     .safari-btn {
-      background: linear-gradient(135deg, #71553e 0%, #8b6343 100%);
+      background: linear-gradient(135deg, #2B1A0E 0%, #3D1F0A 100%);
       color: #fff;
     }
 
     .trip-btn:hover,
     .safari-btn:hover {
-      background: linear-gradient(135deg, #c0672c 0%, #d2993a 100%);
+      background: linear-gradient(135deg, #C45F10 0%, #E87722 100%);
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(124, 48, 45, 0.3);
+      box-shadow: 0 8px 24px rgba(240, 130, 10, 0.35);
     }
 
     .platform-logo {
@@ -318,7 +318,7 @@
       align-items: center;
       gap: 10px;
       margin: 8px 0 4px;
-      color: #c8a98a;
+      color: #C45F10;
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
@@ -330,23 +330,23 @@
       content: '';
       flex: 1;
       height: 1px;
-      background: linear-gradient(to right, transparent, #e0c8a8);
+      background: linear-gradient(to right, transparent, #E87722);
     }
 
     .divider::after {
-      background: linear-gradient(to left, transparent, #e0c8a8);
+      background: linear-gradient(to left, transparent, #E87722);
     }
 
     /* ─── Warm Thank-You Banner ──────────────────────────── */
     .thankyou-banner {
       margin-top: 26px;
       padding: 22px 20px;
-      background: linear-gradient(135deg, #1a5c2a 0%, #2d7a3a 60%, #3a9448 100%);
+      background: linear-gradient(135deg, #1C0F06 0%, #2B1A0E 60%, #3D1F0A 100%);
       border-radius: 16px;
       text-align: center;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 6px 20px rgba(45, 122, 58, 0.3);
+      box-shadow: 0 6px 20px rgba(232, 119, 34, 0.25);
       animation: fadeInUp 0.9s ease-out 0.3s both;
     }
 
@@ -388,7 +388,7 @@
 
     .thankyou-banner .highlight {
       font-weight: 700;
-      color: #ffd36e;
+      color: #F0820A;
       font-size: 15.5px;
       display: block;
       margin-bottom: 8px;
@@ -525,7 +525,7 @@
         for the repeat request.<br /><br />
         🌍 Once done, feel free to continue exploring our adventures on
         <a href="https://liontracksafari.com" target="_blank" rel="noopener"
-          style="color:#7c302d;font-weight:bold;text-decoration:underline;">liontracksafari.com</a> website!
+          style="color:#E87722;font-weight:bold;text-decoration:underline;">liontracksafari.com</a> website!
       </div>
       <div class="message-fade" id="msgFade"></div>
       <button class="read-more-btn" id="readMoreBtn" onclick="toggleMessage()" aria-expanded="false">
